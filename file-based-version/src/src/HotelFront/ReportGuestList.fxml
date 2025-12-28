@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HotelFront.ReportGuestList">
+   <children>
+      <ImageView fitHeight="362.0" fitWidth="573.0" layoutX="-38.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/image/Guest.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <CheckBox fx:id="VacantRoom" layoutX="261.0" layoutY="40.0" mnemonicParsing="false" onAction="#VacantRoomPressing" prefHeight="20.0" prefWidth="183.0" text="مرتب سازی بر اساس تعداد اقامت:">
+         <font>
+            <Font name="Calibri Bold Italic" size="13.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="txtWelcome" layoutX="294.0" layoutY="-5.0" prefHeight="45.0" prefWidth="122.0" text="لیست مهمانان" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Label>
+      <ListView fx:id="RoomList" layoutX="236.0" layoutY="83.0" prefHeight="247.0" prefWidth="229.0" />
+      <Button fx:id="BackButton" layoutX="481.0" layoutY="296.0" mnemonicParsing="false" onAction="#BackButtonPressing" text="Back" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="321.0" layoutY="63.0" text="از بیشتر به کمتر">
+         <font>
+            <Font name="Calibri Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

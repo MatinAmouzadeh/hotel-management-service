@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Hotel Admin Panel</title>
+
+<link rel="stylesheet" href="/static/css/theme.css">
+<link rel="stylesheet" href="/static/css/layout.css">
+<link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+<body>
+
+	<div class="background"></div>
+
+	<div class="app">
+
+		<!-- Sidebar -->
+		<aside class="sidebar glass">
+			<div class="logo">
+				<h2>HotelSys</h2>
+			</div>
+
+			<nav class="menu"></nav>
+
+			<div class="sidebar-footer">
+				<span class="user-role"></span>
+				<button class="btn logout-btn">Logout</button>
+			</div>
+		</aside>
+
+		<!-- Main Content -->
+		<main class="content">
+			<h1 class="page-title">Dashboard</h1>
+			<p>Welcome back 👋</p>
+			<div id="dashboardContent"></div>
+		</main>
+
+	</div>
+
+	<!-- 🔐 Auth Guard (خیلی مهم) -->
+	<script src="/static/js/auth-guard.js"></script>
+
+	<!-- Layout + Dashboard -->
+	<script src="/static/js/layout.js"></script>
+	<script src="/static/js/dashboard.js"></script>
+</body>
+</html>

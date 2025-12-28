@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HotelFront.ReservationGuestInformation">
+   <children>
+      <ImageView fitHeight="339.0" fitWidth="542.0" layoutX="-2.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/image/ppt-picture-GAM9823.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="TextFLName" layoutX="14.0" layoutY="152.0" prefHeight="26.0" prefWidth="164.0" promptText="نام و نام خانوادگی">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TextCodeMelli" layoutX="14.0" layoutY="75.0" prefHeight="26.0" prefWidth="164.0" promptText="کدملی">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TextShShenasname" layoutX="14.0" layoutY="229.0" prefHeight="26.0" prefWidth="164.0" promptText="شماره شناسنامه">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TextDateOfBirth" layoutX="357.0" layoutY="75.0" prefHeight="26.0" prefWidth="164.0" promptText="تاریخ تولد: --/--/----">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TextPhoneNumber" layoutX="357.0" layoutY="152.0" prefHeight="26.0" prefWidth="164.0" promptText="تلفن همراه">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TextDateOfRegistration" layoutX="357.0" layoutY="229.0" prefHeight="26.0" prefWidth="164.0" promptText="تاریخ ثبت نام: --/--/----">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="205.0" layoutY="14.0" text="اطلاعات مهمان" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="SaveButton" layoutX="421.0" layoutY="279.0" mnemonicParsing="false" onAction="#SaveButtonPressing" text="ثبت" textAlignment="CENTER" />
+      <Text fx:id="TextERROR" fill="RED" layoutX="14.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="391.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="TextDown" fill="#3cff00" layoutX="14.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="391.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="BackButton" layoutX="472.0" layoutY="279.0" mnemonicParsing="false" onAction="#BackButtonPressing" text="Back" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Dashboard</title>
+
+  <!-- ✅ فقط یک بار لود شود -->
+  <link rel="stylesheet" href="/css/hotel.css">
+</head>
+
+<body class="role-staff"> <!-- role-manager برای مدیر -->
+
+  <!-- ===== Top Bar ===== -->
+  <header class="top-bar glass">
+    <h1>Hotel Control Center</h1>
+
+    <div class="user-info">
+      <!-- ✅ برای تغییر نقش با JS -->
+      <span class="role-label" id="userRoleLabel">Staff</span>
+      <button class="logout-btn" type="button" id="logoutBtn">Logout</button>
+    </div>
+  </header>
+
+  <!-- ===== Main Layout ===== -->
+	<div class="layout">
+
+		<!-- Sidebar -->
+		<aside class="sidebar glass">
+			<nav class="side-nav">
+				<a class="active" href="#" data-page="dashboard" data-icon="🏨">Dashboard</a>
+				<a href="#" data-page="reservations" data-icon="📅">Reservations</a>
+				<a href="#" data-page="rooms" data-icon="🛏️">Rooms</a> <a href="#"
+					data-page="guests" data-icon="🧳">Guests</a> <a
+					class="manager-only" href="#" data-page="employees" data-icon="👥">Employees</a>
+				<a class="manager-only" href="#" data-page="payments" data-icon="💳">Payments</a>
+			</nav>
+
+		</aside>
+
+		<!-- Content -->
+		<main class="content">
+
+			<!-- Stats -->
+			<section class="stats" id="dashboard">
+				<div class="stat-card glass">
+					<h3>Available Rooms</h3>
+					<span>12</span>
+				</div>
+
+				<div class="stat-card glass">
+					<h3>Occupied Rooms</h3>
+					<span>18</span>
+				</div>
+
+				<div class="stat-card glass manager-only">
+					<h3>Today Revenue</h3>
+					<span>$4,200</span>
+				</div>
+			</section>
+
+			<!-- Activity -->
+			<section class="activity glass">
+				<h3>Live Activity</h3>
+
+				<ul>
+					<li>🟢 Check-in – Room 203</li>
+					<li>💳 Payment received</li>
+					<li>🔴 Check-out – Room 105</li>
+				</ul>
+			</section>
+
+		</main>
+	</div>
+
+	<script src="/js/admin-dashboard.js"></script>
+</body>
+</html>

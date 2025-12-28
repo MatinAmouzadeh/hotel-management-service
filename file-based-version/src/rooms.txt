@@ -1,0 +1,7 @@
+1&Suite&1800000&Reserved
+2&Suite&15600000&Under Maintenance
+3&Normal&12&Under Maintenance
+4&VIP&1800000&Vacant
+8&Suite&150063&Reserved
+12&Normal&12&Reserved
+15&VIP&15&Reserved

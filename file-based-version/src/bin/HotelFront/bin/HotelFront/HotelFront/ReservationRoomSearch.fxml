@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HotelFront.ReservationRoomSearch">
+   <children>
+      <ImageView fitHeight="338.0" fitWidth="544.0" layoutX="-3.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/image/ppt-picture-GAM9828.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="DoneButton" layoutX="69.0" layoutY="22.0" mnemonicParsing="false" onAction="#DoneButtonPressing" prefHeight="25.0" prefWidth="63.0" text="Done">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <MenuButton fx:id="SearchBy" layoutX="335.0" layoutY="22.0" mnemonicParsing="false" onAction="#SearchByPressing" prefHeight="25.0" prefWidth="127.0" text=":جستجو بر اساس">
+         <items>
+            <MenuItem fx:id="RoomNumberSearch" mnemonicParsing="false" onAction="#RoomNumberSearchPressing" text="شماره اتاق" />
+            <MenuItem fx:id="RoomTypeSearch" mnemonicParsing="false" onAction="#RoomTypeSearchPressing" text="نوع اتاق" />
+            <MenuItem fx:id="NightlyPriceSearch" mnemonicParsing="false" onAction="#NightlyPriceSearchPressing" text="قیمت شبانه" />
+            <MenuItem fx:id="RoomStatusSearch" mnemonicParsing="false" onAction="#RoomStatusSearchPressing" text="وضعیت" />
+         </items>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </MenuButton>
+      <TextField fx:id="TextSearch" layoutX="132.0" layoutY="22.0" prefHeight="25.0" prefWidth="204.0" promptText="......">
+         <font>
+            <Font name="System Bold Italic" size="11.0" />
+         </font>
+      </TextField>
+      <Button fx:id="OkButton" layoutX="10.0" layoutY="295.0" mnemonicParsing="false" onAction="#OkButtonPressing" prefHeight="25.0" prefWidth="63.0" text="Ok" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="BackButton" layoutX="462.0" layoutY="295.0" mnemonicParsing="false" onAction="#BackButtonPressing" prefHeight="25.0" prefWidth="63.0" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="351.0" layoutY="85.0" text="شماره اتاق:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="352.0" layoutY="142.0" prefHeight="21.0" prefWidth="77.0" text="نوع اتاق:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="203.0" text="قیمت شبانه:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="261.0" text="وضعیت:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="LblRoomNumber" layoutX="132.0" layoutY="85.0" prefHeight="17.0" prefWidth="204.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="LblRoomType" layoutX="132.0" layoutY="142.0" prefHeight="17.0" prefWidth="204.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="LblNightlyPrice" layoutX="132.0" layoutY="203.0" prefHeight="17.0" prefWidth="204.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="LblRoomStatus" layoutX="132.0" layoutY="261.0" prefHeight="17.0" prefWidth="204.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="NextLButton" layoutX="10.0" layoutY="167.0" mnemonicParsing="false" onAction="#NextLButtonPressing" prefHeight="25.0" prefWidth="63.0" text="Next">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="NaxtRButton" layoutX="462.0" layoutY="167.0" mnemonicParsing="false" onAction="#NaxtRButtonPressing" prefHeight="25.0" prefWidth="63.0" text="Next">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

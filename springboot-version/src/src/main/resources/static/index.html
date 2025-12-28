@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>Hotel Login</title>
+<link rel="stylesheet" href="/css/hotel.css">
+</head>
+
+<body>
+
+<!-- ===== TOP GALLERY ===== -->
+<div class="gallery">
+    <img src="/images/Login.jpg" class="gallery-item active">
+    <img src="/images/pexels-pixabay-258154.jpg" class="gallery-item">
+    <img src="/images/Guest.jpg" class="gallery-item">
+</div>
+
+<!-- ===== LOGIN CARD ===== -->
+<div class="page-center">
+
+    <div class="login-container">
+
+        <h1>Hotel Login</h1>
+
+        <form id="loginForm">
+
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+
+            <!-- Role Switch -->
+            <div class="role-select">
+                <span class="role-label">Staff</span>
+
+                <label class="switch">
+                    <input type="checkbox" id="isAdmin">
+                    <span class="slider"></span>
+                </label>
+
+                <span class="role-label admin">Manager</span>
+            </div>
+
+            <!-- Admin Warning -->
+            <p id="adminWarning" class="admin-warning hidden">
+                ⚠ Management access is restricted.<br>
+                All activities are logged and monitored.
+            </p>
+
+            <button type="submit" class="login-btn">Sign In</button>
+
+            <p id="errorMessage"></p>
+        </form>
+
+    </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="hotel-info">
+    <p>
+        Welcome to the official hotel management system.<br>
+        Authorized staff and management only.
+    </p>
+</footer>
+
+<script src="/js/login.js"></script>
+</body>
+</html>

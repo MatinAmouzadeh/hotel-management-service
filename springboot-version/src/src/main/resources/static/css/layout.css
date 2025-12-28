@@ -1,0 +1,75 @@
+@charset "UTF-8";
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-overlay);
+  z-index: -1;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.logo h2 {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+/* Menu */
+.menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-item {
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text-main);
+  transition: var(--transition-fast);
+}
+
+.menu-item:hover {
+  background: rgba(37, 99, 235, 0.1);
+}
+
+.menu-item.active {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Footer */
+.sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.user-role {
+  color: var(--text-muted);
+  font-size: 14px;
+  text-align: center;
+}
+
+.logout-btn {
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  color: var(--text-main);
+}

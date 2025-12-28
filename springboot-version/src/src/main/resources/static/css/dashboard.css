@@ -1,0 +1,102 @@
+@charset "UTF-8";
+body {
+  background: url("hotel-bg.jpg") center / cover no-repeat fixed;
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-overlay);
+}
+
+.dashboard {
+  position: relative;
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 32px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.role {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  padding: 24px;
+  text-align: center;
+}
+
+.stat-card .label {
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.stat-card .value {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  padding: 20px;
+}
+
+.stat-card h2 {
+  margin-top: 8px;
+  font-size: 26px;
+}
+
+.stat-card.warning {
+  border-left: 4px solid #f59e0b;
+}
+
+.activity {
+  padding: 20px;
+}
+
+.activity h3 {
+  margin-bottom: 12px;
+}
+
+.activity ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.activity li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.activity .action {
+  font-weight: 600;
+}
+
+.activity .time {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+

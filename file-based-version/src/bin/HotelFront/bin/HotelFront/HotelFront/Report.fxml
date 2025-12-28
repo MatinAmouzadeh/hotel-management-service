@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HotelFront.Report">
+   <children>
+      <AnchorPane prefHeight="330.0" prefWidth="535.0" style="-fx-background-color: #191936;">
+         <children>
+            <ImageView fitHeight="245.0" fitWidth="367.0" layoutX="-42.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/image/Amar.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="201.0" layoutY="11.0" text="گزارش گیری و آمار" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="282.0" layoutY="43.0" prefHeight="245.0" prefWidth="254.0" style="-fx-background-color: #191936;">
+               <children>
+                  <Button fx:id="HotelIncomeButton" layoutX="61.0" layoutY="192.0" mnemonicParsing="false" onAction="#HotelIncomePressing" prefHeight="40.0" prefWidth="183.0" style="-fx-background-color: #778899;" text="درآمد هتل" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="GuestsListButton" layoutX="61.0" layoutY="102.0" mnemonicParsing="false" onAction="#GuestsListPressing" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: #778899;" text="لیست مهمانان" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="RoomsListButton" layoutX="61.0" layoutY="13.0" mnemonicParsing="false" onAction="#RoomsListButtonPressing" prefHeight="40.0" prefWidth="183.0" style="-fx-background-color: #778899;" text="لیست اتاق ها" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="22.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="BackButton" layoutX="10.0" layoutY="295.0" mnemonicParsing="false" onAction="#BackButtonPressing" prefHeight="25.0" prefWidth="63.0" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HotelFront.ReportRoomList">
+   <children>
+      <ImageView fitHeight="347.0" fitWidth="607.0" layoutX="-7.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/image/54.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="txtWelcome" layoutX="210.0" layoutY="-4.0" prefHeight="45.0" prefWidth="115.0" text="لیست اتاق ها" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Label>
+      <ListView fx:id="RoomList" layoutX="187.0" layoutY="108.0" prefHeight="223.0" prefWidth="163.0" />
+      <Label layoutX="203.0" layoutY="63.0" text="پرمتقاضی ترین نوع اتاق:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="LblFavoriteType" layoutX="248.0" layoutY="87.0" prefHeight="18.0" prefWidth="43.0" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="54.0" fitWidth="24.0" layoutX="296.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/image/Love.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="24.0" layoutX="220.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/image/Love.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="LblList" layoutX="215.0" layoutY="202.0" prefHeight="18.0" prefWidth="115.0" textAlignment="RIGHT">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackButton" layoutX="482.0" layoutY="296.0" mnemonicParsing="false" onAction="#BackButtonPressing" text="Back" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="-6.0" layoutY="33.0" prefHeight="32.0" prefWidth="541.0" style="-fx-background-color: #ffff;">
+         <children>
+            <CheckBox fx:id="VacantRoom" layoutX="330.0" layoutY="6.0" mnemonicParsing="false" onAction="#VacantRoomPressing" prefHeight="20.0" prefWidth="50.0" text="خالی">
+               <font>
+                  <Font name="Calibri Bold Italic" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="FullRoom" layoutX="441.0" layoutY="6.0" mnemonicParsing="false" onAction="#FullRoomPressing" prefHeight="20.0" prefWidth="81.0" text="اشغال شده">
+               <font>
+                  <Font name="Calibri Bold Italic" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="UnderRepairRoom" layoutX="175.0" layoutY="6.0" mnemonicParsing="false" onAction="#UnderRepairRoomPressing" prefHeight="20.0" prefWidth="81.0" text="درحال تعمیر">
+               <font>
+                  <Font name="Calibri Bold Italic" size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="NeedServiceRoom" layoutX="25.0" layoutY="4.0" mnemonicParsing="false" onAction="#NeedServiceRoomPressing" prefHeight="20.0" prefWidth="98.0" text="نیازمند سرویس">
+               <font>
+                  <Font name="Calibri Bold Italic" size="13.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

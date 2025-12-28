@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* =========================
+   Global Design Tokens
+   ========================= */
+:root {
+  /* Colors */
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --bg-overlay: rgba(0, 0, 0, 0.45);
+  --glass-bg: rgba(255, 255, 255, 0.88);
+  --glass-border: rgba(255, 255, 255, 0.35);
+
+  --text-main: #111827;
+  --text-muted: #6b7280;
+
+  /* Layout */
+  --radius-lg: 20px;
+  --radius-md: 14px;
+
+  /* Shadow */
+  --shadow-soft: 0 20px 40px rgba(0, 0, 0, 0.18);
+  --shadow-light: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+  /* Motion */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.35s ease;
+}
+
+/* =========================
+   Global Reset
+   ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--text-main);
+}
+
+/* =========================
+   Glass Card
+   ========================= */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-soft);
+}
+
+/* =========================
+   Buttons
+   ========================= */
+.btn {
+  height: 48px;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition-fast);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+}
+
+/* =========================
+   Titles
+   ========================= */
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HotelFront.ReservationIDSetter">
+   <children>
+      <ImageView fitHeight="419.0" fitWidth="668.0" layoutX="-133.0" layoutY="-87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/image/ppt-picture-GAM9822.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="101.0" layoutY="83.0" text=":شماره رزرو" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="LblReservationID" layoutX="167.0" layoutY="83.0" prefHeight="19.0" prefWidth="265.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="12.0" prefHeight="26.0" prefWidth="397.0" text="لطفا برای مهمان عزیز یادآور شود که شماره رزرو خود را حتما در جایی ذخیره نماید" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="5.0" prefHeight="40.0" prefWidth="9.0" text="!" textFill="RED">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="OKButton" layoutX="477.0" layoutY="291.0" mnemonicParsing="false" onAction="#OKButtonPressing" prefHeight="25.0" prefWidth="44.0" text="OK" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

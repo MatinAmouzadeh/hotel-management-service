@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HotelFront.ReservationInformation">
+   <children>
+      <ImageView fitHeight="338.0" fitWidth="543.0" layoutX="-4.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/image/ppt-picture-GAM9823.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="215.0" layoutY="10.0" text="اطلاعات رزرو" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="SaveButton" layoutX="431.0" layoutY="289.0" mnemonicParsing="false" onAction="#SaveButtonPressing" text="ثبت" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="BackButton" layoutX="482.0" layoutY="289.0" mnemonicParsing="false" onAction="#BackButtonPressing" text="Back" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="TextCheckInDate" layoutX="374.0" layoutY="181.0" prefHeight="26.0" prefWidth="147.0" promptText="تاریخ ورود: --/--/----">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TextCheckOutDate" layoutX="374.0" layoutY="242.0" prefHeight="26.0" prefWidth="147.0" promptText="تاریخ خروج: --/--/----">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TextTotalAmount" layoutX="14.0" layoutY="242.0" prefHeight="26.0" prefWidth="147.0" promptText="مبلغ کل اقامت">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TextReservationDate" layoutX="14.0" layoutY="181.0" prefHeight="26.0" prefWidth="147.0" promptText="تاریخ رزرو: --/--/----">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextField>
+      <AnchorPane layoutY="55.0" prefHeight="103.0" prefWidth="535.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label fx:id="LblGuestCodeMelli" layoutX="404.0" layoutY="57.0" prefHeight="30.0" prefWidth="95.0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="LblRoomNumber" layoutX="35.0" layoutY="57.0" prefHeight="30.0" prefWidth="71.0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="405.0" layoutY="9.0" prefHeight="30.0" prefWidth="95.0" text="کدملی مهمان:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="10.0" prefHeight="30.0" prefWidth="71.0" text="شماره اتاق:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <VBox fx:id="guestListVBox" layoutX="195.0" layoutY="155.0" prefHeight="177.0" prefWidth="147.0" />
+      <Button fx:id="addGuestButton" layoutX="193.0" layoutY="132.0" mnemonicParsing="false" onAction="#addGuestButtonPressing" text="➕ افزودن کدملی همراهان">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
