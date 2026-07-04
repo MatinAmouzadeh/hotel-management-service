@@ -63,24 +63,6 @@ ________________________________________
 معماری پروژه:
 این پروژه با ساختار لایه‌ای طراحی شده است تا بخش‌های مختلف سیستم از هم جدا باشند و هر بخش مسئولیت مشخصی داشته باشد.
 
-ساختار کلی پروژه به این صورت است:
-hotel-management-file-based/
-│
-├── src/
-│   ├── model/
-│   ├── repository/
-│   ├── service/
-│   ├── view/
-│   └── main/
-│
-├── data/
-│   ├── rooms.txt
-│   ├── guests.txt
-│   └── reservations.txt
-│
-├── README.md
-└── .gitignore
-
 توضیح لایه‌ها:
 
 •	POJO:
@@ -240,24 +222,8 @@ Technologies Used
 ________________________________________
 
 Project Architecture
+
 This project is designed using layered architecture so that different parts of the system are separated and each part has a clear responsibility.
-The general project structure is:
-hotel-management-file-based/
-│
-├── src/
-│   ├── model/
-│   ├── repository/
-│   ├── service/
-│   ├── view/
-│   └── main/
-│
-├── data/
-│   ├── rooms.txt
-│   ├── guests.txt
-│   └── reservations.txt
-│
-├── README.md
-└── .gitignore
 
 Layer explanation:
 
